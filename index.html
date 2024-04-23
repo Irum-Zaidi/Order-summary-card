@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+    :root {
+      --Very-pale-blue: hsl(225, 100%, 98%);
+      --Desaturated-blue: hsl(224, 23%, 55%);
+      --Dark-blue: hsl(223, 47%, 23%);
+      --Pale-blue: hsl(225, 100%, 94%);
+      --Bright-blue: hsl(245, 75%, 52%);
+      --Bright-blue-hover: hsla(245, 75%, 52%, 60%);
+    }
+
+    .attribution {
+      margin-top: 14px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .card-section {
+      font-family: "Red Hat Display", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    class=" flex flex-col items-center justify-center h-auto xl:h-lvh bg-no-repeat bg-auto bg-top bg-Pale-blue md:bg-[url('./images/pattern-background-desktop.svg')] bg-[url('./images/pattern-background-mobile.svg')]">
+    <div
+      class=" card-section text-center flex items-center flex-col border border-transparent rounded-xl overflow-hidden md:w-96 w-11/12">
+      <div>
+        <img src="./images/illustration-hero.svg" alt="" class="w-full">
+      </div>
+      <div class="card-content bg-white flex flex-col gap-y-4 md:p-8 p-4">
+        <h1 class="text-2xl font-[900] text-Dark-blue">Order Summary</h1>
+
+        <p class="text-center text-[16px] text-Desaturated-blue font-[500]">You can now listen to millions of songs,
+          audiobooks, and podcasts on any
+          device anywhere you like!</p>
+
+        <div class="pricing-section bg-Very-pale-blue p-4 rounded-xl flex justify-between">
+          <div class="flex gap-x-3">
+            <img src="./images/icon-music.svg" alt="">
+
+            <p class="flex flex-col">
+              <span class="font-[900]">Annual Plan</span>
+              <span class="font-[500] text-Desaturated-blue">$59.99/year</span>
+            </p>
+          </div>
+          <button class="underline font-[900] text-Bright-blue hover:text-Bright-blue-hover hover:no-underline">Change</button>
+        </div>
+
+        <button class="w-full bg-Bright-blue text-Very-pale-blue p-2 rounded-lg shadow-2xl mb-4 mt-2 font-[700] hover:bg-Bright-blue-hover">Proceed
+          to Payment</button>
+        <button class="text-Desaturated-blue font-[900] hover:text-Dark-blue">Cancel Order</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Irum-Zaidi/Order-summary-card">Irum Zaidi</a>.
+    </div>
+  </div>
+</body>
+
+</html>
